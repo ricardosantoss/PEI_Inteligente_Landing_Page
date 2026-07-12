@@ -553,6 +553,7 @@ h1 {
 .detailed-person {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -578,6 +579,30 @@ h1 {
 
 img.person-photo {
   display: block;
+}
+
+.photo-up {
+  object-position: center 28%;
+}
+
+.photo-slight-up {
+  object-position: center 38%;
+}
+
+.photo-down {
+  object-position: center 62%;
+}
+
+.photo-left {
+  object-position: 35% center;
+}
+
+.photo-right {
+  object-position: 65% center;
+}
+
+.person-info {
+  width: 100%;
 }
 
 .person-info h3 {
