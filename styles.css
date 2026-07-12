@@ -545,36 +545,47 @@ h1 {
 
 .person-card {
   min-height: 250px;
-  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
 }
 
 .detailed-person {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
 .person-photo {
   display: grid;
   place-items: center;
-  width: 84px;
-  height: 84px;
-  border-radius: 24px;
+  width: 104px;
+  height: 104px;
+  border: 5px solid var(--white);
+  border-radius: 50%;
   background:
     linear-gradient(135deg, rgba(4, 117, 111, 0.95), rgba(94, 166, 106, 0.92)),
     var(--teal);
   color: var(--white);
   font-size: 1.28rem;
   font-weight: 900;
-  box-shadow: 0 16px 32px rgba(4, 117, 111, 0.18);
+  box-shadow:
+    0 16px 32px rgba(4, 117, 111, 0.18),
+    0 0 0 10px rgba(223, 243, 230, 0.72);
+  object-fit: cover;
+  object-position: center;
+}
+
+img.person-photo {
+  display: block;
 }
 
 .person-info h3 {
-  font-size: 1.28rem;
+  font-size: 1.22rem;
 }
 
 .person-info p {
-  font-size: 0.98rem;
+  font-size: 0.95rem;
 }
 
 .featured-person {
@@ -813,3 +824,4 @@ h1 {
     align-items: flex-start;
   }
 }
+
